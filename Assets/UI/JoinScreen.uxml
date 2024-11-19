@@ -1,0 +1,13 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/JoinScreen.uss?fileID=7433441132597879392&amp;guid=3df4b89fc4127b14a9b6775bae1e9920&amp;type=3#JoinScreen" />
+    <engine:VisualElement name="JoinWindow" class="WindowUp">
+        <engine:Label text="JOIN GAME" class="Title" />
+        <engine:Button text="JOIN RANDOM" name="JoinBtn" class="Button" />
+        <engine:TextField label="IP ADDRESS" placeholder-text="filler text" max-length="16" value="127.0.0.1" name="AddressTxt" class="TextField" />
+        <engine:TextField label="PORT " placeholder-text="filler text" max-length="16" value="7070" name="PortTxt" class="TextField" />
+        <engine:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-between; height: auto; -unity-background-scale-mode: stretch-to-fill;">
+            <engine:Button text="CREATE ROOM" name="CreateRoomBtn" class="Button" style="flex-grow: 1; flex-shrink: 0; width: auto; max-height: none;" />
+            <engine:Button text="JOIN ROOM" name="JoinRoomBtn" class="Button" style="flex-basis: auto; flex-shrink: 0; flex-grow: 1; -unity-background-scale-mode: stretch-to-fill; width: auto;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
